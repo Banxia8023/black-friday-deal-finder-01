@@ -34,7 +34,9 @@ export function dealCard(deal) {
 
 export function dealDetail(deal, sameProduct) {
   const pct = discountPct(deal);
-  const others = sameProduct.filter((d) => d.id !== deal.id);
+  const others = sameProduct
+    .filter((d) => d.id !== deal.id)
+    .sort((a, b) => a.price - b.price); // cheapest other store first
   const compare = others.length
     ? `<section class="compare">
         <h2>Same product, other stores</h2>
