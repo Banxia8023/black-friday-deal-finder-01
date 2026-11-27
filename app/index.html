@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealHound — Black Friday 2026 deals, checked today</title>
+<meta name="description" content="23 real Black Friday 2026 deals from 7 stores, each checked on Nov 27, 2026, with an honest verdict on whether it is really a deal.">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand"><span class="brand-mark">DH</span><span class="brand-name">DealHound</span></div>
+  <p class="tagline">Black Friday 2026 — real deals, checked today, verdicts included.</p>
+  <p class="stats">23 deals · 7 stores · Prices checked Nov 27, 2026 · Sale runs through Cyber Monday, Nov 30</p>
+</header>
+
+<section id="controls" class="controls" aria-label="Search and filters">
+  <div class="control-row">
+    <label class="search-label" for="search">Search</label>
+    <input id="search" type="search" placeholder="Try “AirPods”, “TV”, “Best Buy”…" autocomplete="off">
+  </div>
+  <div class="control-row filters">
+    <label>Category <select id="filter-category"></select></label>
+    <label>Store <select id="filter-store"></select></label>
+    <label>Discount <select id="filter-discount"></select></label>
+    <label>Sort by <select id="sort"></select></label>
+  </div>
+</section>
+
+<main id="main">
+  <p id="count" class="count"></p>
+  <div id="results" class="grid"></div>
+</main>
+
+<footer class="site-footer">
+  <h2>How the deals were checked</h2>
+  <p>Every price on this page was read by the agent that built this site on Black Friday, Nov 27, 2026 — from the store itself or from a deals source that names the store. Each deal card says when its price was checked and where it was read. A “New low” means the lowest price seen for that product; “Strong price” means a deep cut (25%+ off, or $200+ saved); “Routine sale” means a real cut, but a small one. Prices move fast on Black Friday: the store's page is the final word.</p>
+  <p>DealHound is an independent deal finder. It is not affiliated with Amazon, Best Buy, Target, Walmart, Costco, B&amp;H Photo or Newegg, and store names are used only to say where a deal was found.</p>
+</footer>
+
+<script type="module" src="./main.js"></script>
+</body>
+</html>
